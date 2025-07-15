@@ -27,7 +27,7 @@ const Main = () => {
                 }
             }} onChange={(e) => setTask(e.target.value)}/>
             <button type="button" onClick={addTask}>Add Task</button>
-            <ul>
+            <ul className="task_list">
                 {taskLists.map((task, index) => {
                      return <Task key={index} task={task}/>
                 })}
