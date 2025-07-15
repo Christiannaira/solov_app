@@ -21,12 +21,12 @@ const Main = () => {
 
          <div className="main_content">
              <h1>Solov Task Tracker</h1>
-            <input type="text" value={task} placeholder="Type your new task" onKeyDown={(e) => {
+            <input className="task_input" type="text" value={task} placeholder="Type your new task" onKeyDown={(e) => {
                 if (e.key === "Enter") {
                     addTask();
                 }
             }} onChange={(e) => setTask(e.target.value)}/>
-            <button type="button" onClick={addTask}>Add Task</button>
+            <button className="task_btn" type="button" onClick={addTask}>Add Task</button>
             <ul className="task_list">
                 {taskLists.map((task, index) => {
                      return <Task key={index} task={task}/>
