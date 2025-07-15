@@ -1,4 +1,5 @@
 import { React, useState } from "react";
+import Task from "./Task";
 
 const Main = () => {
    const [task, setTask] = useState("");
@@ -24,7 +25,7 @@ const Main = () => {
             <button type="button" onClick={addTask}>Add Task</button>
             <ul>
                 {taskLists.map((task, index) => {
-                    return <li key={index}>{task}</li>
+                     return <Task key={index} task={task}/>
                 })}
             </ul>
          </div>
