@@ -21,7 +21,11 @@ const Main = () => {
 
          <div className="main_content">
              <h1>Solov Task Tracker</h1>
-            <input type="text" value={task} placeholder="Type your new task" onChange={(e) => setTask(e.target.value)}/>
+            <input type="text" value={task} placeholder="Type your new task" onKeyDown={(e) => {
+                if (e.key === "Enter") {
+                    addTask();
+                }
+            }} onChange={(e) => setTask(e.target.value)}/>
             <button type="button" onClick={addTask}>Add Task</button>
             <ul>
                 {taskLists.map((task, index) => {
