@@ -58,8 +58,13 @@
     cursor: pointer;
     border-radius: 6px;
     border: none;
-    background-color: #f1f1f1;
+    background-color: #f7f7f7;
     font-size: 16px;
+    transition: .3s;
+}
+
+.main_btn:hover {
+    background-color: #f1f1f1;
 }
 
 /*task style*/
