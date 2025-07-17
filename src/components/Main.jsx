@@ -8,9 +8,18 @@ const Main = () => {
 
    const addTask = () => {
 
-        alert("hello world");
+        const completed = false;
+
+        const newTask = {task: task, completed: completed};
+
+        setTaskLists((prev) => {
+            return([...prev, newTask]);
+        })
 
    }
+
+    console.log(taskLists);
+
 
    return (
       <>
