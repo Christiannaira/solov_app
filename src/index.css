@@ -99,3 +99,7 @@
     background-color: #f1f1f1;
 }
 
+.task_btn.completed {
+    background-color: rgb(16, 175, 16);
+    color: #fff;
+}

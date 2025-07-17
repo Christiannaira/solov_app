@@ -19,9 +19,6 @@ const Main = () => {
 
    }
 
-    console.log(taskLists);
-
-
    return (
       <>
          <div className="main">
@@ -40,7 +37,7 @@ const Main = () => {
 
                <div className="main_content_tasks">
                     {taskLists.map((task, index) => {
-                        return <Task key={index} task={task} />
+                        return <Task key={index} task={task} id={index} taskLists={taskLists} setTaskLists={setTaskLists}/>
                     })}
                </div>
 
