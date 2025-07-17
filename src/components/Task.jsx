@@ -1,8 +1,6 @@
 import { memo } from "react"
 
 const Task = ({task}) => {
-
-  console.log("hello world")
  
   return (
     <div className='task'>
@@ -11,4 +9,4 @@ const Task = ({task}) => {
   )
 }
 
-export default Task
+export default memo(Task);
