@@ -6,7 +6,7 @@ const Task = () => {
 
   return (
     <div className='task'>
-     asd
+     task
     </div>
   )
 }
