@@ -3,6 +3,8 @@ import { memo, useState } from "react";
 const Task = ({ task, id, taskLists, setTaskLists }) => {
    const [status, setStatus] = useState(task.completed);
 
+   console.log(taskLists);
+
    const handleUpdate = () => {
       setTaskLists((tasks) =>
          tasks.map((task, index) =>
@@ -19,7 +21,13 @@ const Task = ({ task, id, taskLists, setTaskLists }) => {
       setStatus(!status);
    };
 
-   console.log(taskLists);
+   const handleRemove = () => {
+
+      setTaskLists((tasks) =>
+         tasks.filter((task, index) => index !== id)
+      );
+
+   }
 
    return (
       <div
@@ -27,7 +35,7 @@ const Task = ({ task, id, taskLists, setTaskLists }) => {
       >
          <h3 className="task_title">{task.task}</h3>
          <div className="task_btns">
-            <button className="task_btn">Remove</button>
+            <button className="task_btn" onClick={handleRemove}>Remove</button>
             <button
                className={
                   status ? "task_btn completed " : "task_btn not-completed"
