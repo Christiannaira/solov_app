@@ -90,15 +90,25 @@
     transform: translateY(-1px);
 }
 
-
+.task_btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .task_btn {
-    padding: 10px 16px;
+    padding: 10px 20px;
     border-radius: 6px;
     border: 1px solid rgb(241, 241, 241, .5);
     cursor: pointer;
     background-color: #f7f7f7;
     transition: .3s;
+    width: 150px;
+}
+
+.task_btns .task_btn:first-child {
+    background-color: rgb(241, 40, 40);
+    color: #f1f1f1;
 }
 
 .task_btn:hover {
