@@ -4,7 +4,8 @@ const Task = ({task}) => {
  
   return (
     <div className='task'>
-      <h3>{task.task}</h3>
+      <h3 className="task_title">{task.task}</h3>
+       <button className="task_btn">Completed</button>
     </div>
   )
 }
