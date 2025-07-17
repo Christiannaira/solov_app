@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { memo } from "react";
 import Task from "./Task";
 
 const Main = () => {
@@ -49,4 +50,4 @@ const Main = () => {
    );
 };
 
-export default Main;
+export default memo(Main);
