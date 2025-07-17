@@ -36,8 +36,13 @@ const Main = () => {
                     }}/>
                     <button className="main_btn" onClick={addTask}>Add Task</button>
                </div>
-               <Task />
-               {task}
+
+               <div className="main_content_tasks">
+                    {taskLists.map((task, index) => {
+                        return <Task key={index} task={task} />
+                    })}
+               </div>
+
             </div>
          </div>
       </>

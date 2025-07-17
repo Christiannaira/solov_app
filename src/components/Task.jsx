@@ -1,12 +1,12 @@
-import React from 'react'
+import { memo } from "react"
 
-const Task = () => {
+const Task = ({task}) => {
 
+  console.log("hello world")
  
-
   return (
     <div className='task'>
-     task
+      <h3>{task.task}</h3>
     </div>
   )
 }
