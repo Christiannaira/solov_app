@@ -25,7 +25,7 @@ const Task = ({ task, id, taskLists, setTaskLists }) => {
 
 
    return (
-      <div className="task">
+      <div className={status? "task task_completed " : "task task_not-completed"}>
          <h3 className="task_title">{task.task}</h3>
          <button className={status? "task_btn completed " : "task_btn not-completed"} onClick={handleUpdate}>
             {status? "Completed" : "Not Completed"}

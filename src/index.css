@@ -76,15 +76,21 @@
     transition: .3s;
 }
 
-.task:hover {
-    transform: translateY(-1px);
-}
-
 .task_title {
     font-weight: 500;
     color: #212121;
     font-size: 16px;
 }
+
+.task.task_completed {
+    background-color: rgb(189, 248, 189);
+}
+
+.task:hover {
+    transform: translateY(-1px);
+}
+
+
 
 .task_btn {
     padding: 10px 16px;
