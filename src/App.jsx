@@ -6,6 +6,7 @@ function App() {
     <>
 
       <div className="hero">
+        
         <Main/>
       </div>
 
